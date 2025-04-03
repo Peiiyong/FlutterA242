@@ -12,14 +12,25 @@ class _MyFakerScreenState extends State<MyFakerScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('MYFaker'),
+        title: Text('MyFaker'),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
 
       body: Center(
-        child: Text('MyFaker'),
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: onPressed, 
+              child: Text('Load Data'),
+            ),
+          ],
+        )
       ),
     );
+  }
+
+  void onPressed() {
+    
   }
 }
