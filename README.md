@@ -4,6 +4,9 @@
 
 2. API : https://apipheny.io/free-api/
 
+3. HTTP : https://pub.dev/packages/http/install
+   
+      flutter pub add http
 
 ## Output:
 <table>
