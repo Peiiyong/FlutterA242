@@ -5,6 +5,7 @@
 2. API
    - Apipheny: https://apipheny.io/free-api/
    - OpenLigaDB
+   - weather api: https://api.data.gov.my/weather/forecast/
    - Example: https://github.com/razynfieras/razynflutterws
 
 4. HTTP : https://pub.dev/packages/http/install
