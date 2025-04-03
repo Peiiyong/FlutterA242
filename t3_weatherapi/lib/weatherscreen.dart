@@ -60,9 +60,12 @@ class _WeatherScreenState extends State<WeatherScreen> {
 
   Future<void> getWeather() async {
     String loc = _controller.text;
+    
     var response = await http.get(
-      Uri.parse('https://api.data.gov.my/weather/forecast?state=$loc'), //unstable
-    ); //https://api.data.gov.my/weather/forecast/?contains=$loc@location__location_name *cant use this 
+      Uri.parse('https://api.data.gov.my/weather/forecast?state=$loc'), // not accurate
+    ); 
+    //https://api.data.gov.my/weather/forecast/?contains=$loc@location__location_name *cant use this 
+    //https://api.data.gov.my/weather/forecast/?contains=Jitra@location__location_name * success
     log(response.body);
     if (response.statusCode == 200) {
       final List<dynamic> data = jsonDecode(response.body);
