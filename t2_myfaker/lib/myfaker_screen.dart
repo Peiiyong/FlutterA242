@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -34,8 +35,9 @@ class _MyFakerScreenState extends State<MyFakerScreen> {
     var response = await http.get(
       Uri.parse('https://slumberjer.com/myfaker/myfaker.php'),
     );
-    log(response.statusCode.toString());
 
+    // Check if the response is successful (status code 200)
+    //log(response.statusCode.toString());
     log(response.body.toString());
     /*
     O U T P U T 
@@ -43,5 +45,17 @@ class _MyFakerScreenState extends State<MyFakerScreen> {
     [log] {"status":"success","data":[{"name":"Dr. Liam Hartmann","phone":"886-508-4472 x77854",
             "email":"lferry@yahoo.com","country":"Malta","address":"5842 Hassan Pass\nKellenborough, VA 29059"}]}
     */
+
+    if (response.statusCode == 200) {
+      //convert json data to array
+      var resparr = json.decode(response.body);
+      print(resparr['status'],); // I/flutter (24653): success  **Use ['status'] || ['data'] || ['data'][0]['name']
+      print(resparr['data'][0]['name']); 
+      // I/flutter (24653): Frank Fahey *第一次按
+      // I/flutter (24653): Stephany Haag *第二次
+      // I/flutter (24653): Beau Schuppe IV *第三次
+      // I/flutter (24653): Mr. Logan Will Sr. *第四次
+      
+    }
   }
 }
