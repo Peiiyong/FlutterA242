@@ -32,7 +32,7 @@
   </tr>
   <tr>
     <th>3/27</th>
-    <th> </th>
+    <th>4/3</th>
     <th> </th>
     <th> </th>
   </tr>
