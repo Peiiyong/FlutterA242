@@ -4,6 +4,10 @@
 
 2. API : https://apipheny.io/free-api/
 
+3. HTTP : https://pub.dev/packages/http/install
+   -  添加 http 库到 Flutter 项目，用于 发送网络请求 (API 请求)。     
+   
+            flutter pub add http
 
 ## Output:
 <table>
