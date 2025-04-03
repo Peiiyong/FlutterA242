@@ -5,7 +5,8 @@
 2. API : https://apipheny.io/free-api/
 
 3. HTTP : https://pub.dev/packages/http/install
-   -  添加 http 库到 Flutter 项目，用于 发送网络请求 (API 请求)。     
+   -  添加 http 库到 Flutter 项目，用于 发送网络请求 (API 请求)。
+   -  List of HTTP Status Code -> https://en.wikipedia.org/wiki/List_of_HTTP_status_codes  
    
             flutter pub add http
 
