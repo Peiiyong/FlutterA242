@@ -6,7 +6,7 @@
 
 3. HTTP : https://pub.dev/packages/http/install
    
-      flutter pub add http
+         flutter pub add http
 
 ## Output:
 <table>
