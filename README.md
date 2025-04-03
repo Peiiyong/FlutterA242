@@ -10,6 +10,9 @@
    
             flutter pub add http
 
+4. JSON(text) / XML
+
+
 ## Output:
 <table>
   <tr>
