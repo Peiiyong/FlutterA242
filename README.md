@@ -8,27 +8,27 @@
    - weather api: https://api.data.gov.my/weather/forecast/
    - Example: https://github.com/razynfieras/razynflutterws
 
-4. HTTP : https://pub.dev/packages/http/install
+3. HTTP : https://pub.dev/packages/http/install
    -  添加 http 库到 Flutter 项目，用于 发送网络请求 (API 请求)。
    -  List of HTTP Status Code -> https://en.wikipedia.org/wiki/List_of_HTTP_status_codes  
    
             flutter pub add http
 
-5. JSON(text) / XML
+4. JSON(text) / XML
    
-6.  Terminal
-   - create a new project using command prompt     
+5.  Terminal
+      -  create a new project using command prompt
+        
+              flutter create --org com.'package name' 'project name'
      
-           flutter create --org com.'package name' 'project name'
-     
-   - to check the directory of the file
+      -  to check the directory of the file
           
-           dir
+              dir
 
-   - open project in vs code
-     
-        	   cd unigo
-   	      code .
+      -  open project in vs code
+  
+              cd unigo
+              code .
 
 
 ## Output:
