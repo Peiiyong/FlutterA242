@@ -15,6 +15,22 @@
             flutter pub add http
 
 5. JSON(text) / XML
+   
+6.  Terminal
+   - create a new project using command prompt
+     
+     
+        flutter create --org com.'package name' 'project name'
+     
+   - to check the directory of the file
+     
+     
+        dir
+
+   - open project in vs code
+     
+        	cd unigo
+   	      code .
 
 
 ## Output:
