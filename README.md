@@ -48,7 +48,7 @@
   <tr>
     <th>3/27</th>
     <th>4/3</th>
-    <th> </th>
+    <th>4/3</th>
     <th> </th>
   </tr>
 </table>
