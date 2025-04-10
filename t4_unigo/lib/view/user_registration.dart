@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t4_unigo/view/loginScreen.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
@@ -64,8 +65,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       decoration: InputDecoration(
                         prefixIcon: const Icon(Icons.lock), // add the icon
                         labelText: 'Password', //before click the text field
-                        hintText:
-                            'Enter your password', //after click the text field
+                        hintText:'Enter your password', //after click the text field
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0),
                           borderSide: const BorderSide(
@@ -178,7 +178,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         });
                       },
                     ), */
-
                     TextField(
                       controller: universityController,
                       decoration: InputDecoration(
@@ -198,7 +197,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     ),
 
                     SizedBox(height: 16),
-
                     //button
                     Container(
                       //can use container or sizedbox to increase the width of the button.
@@ -208,6 +206,26 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         child: Text('Resgiter'),
                       ),
                     ),
+
+                    SizedBox(height: 15,),
+                    //already have account? login
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Already have account? '),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LoginScreen(),
+                              ),
+                            );
+                          },
+                          child: Text('Login Now!', style: TextStyle(color: Colors.blue))),  
+                       ],
+                    ),
+
                   ],
                 ),
               ),
@@ -224,7 +242,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     String confirmPassword = confirmPasswordController.text;
     String address = addressController.text;
     String phone = phoneController.text;
-    String university = selectedUniversity ?? '';
+    String university = universityController.text;
+    //String university = selectedUniversity ?? ''; //for dropdown button
 
     if (email.isEmpty ||
         password.isEmpty ||
@@ -249,6 +268,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           backgroundColor: Colors.green,
         ),
       );
+      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => const LoginScreen()),);
       return;
     }
   }
