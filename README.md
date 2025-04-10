@@ -35,14 +35,44 @@
               cd unigo
               code .
 
-2. loading 
+2. **Loading Icon**
    - CircularProgressIndicator ：圆圈
    - RefreshProgressIndicator  ：圆形   
    - LinearProgressIndicator   :横线
    - CircularProgressIndicator.adaptive()
   
-3. 
+3. Navigate to **NEXT** Page
+   - Navigator.push 
+      - 会保留当前页面。
+      - 用户可以在新页面按返回（Back）回到旧页面。
+      - 🧠 就像 “打开新页面”。
 
+   - Navigator.pushReplacement
+        - 会替换掉当前页面。
+        - 用户不能返回旧页面。
+        - 🧠 就像 “用新页面替换当前页面”。
+
+4. **Scrollable** widget
+   - SingleChildScrollView
+      - 📦 适合：一个大内容块（多个 widget 组合在一起）
+      - 🔁 它不能自动生成很多 item\
+      - 🔩 必须手动写好所有内容
+      - 适用: 内容不是重复列表（表单、页面布局等）
+
+   - ListView
+      - 📄 适合：重复列表内容
+      - 🔁 可以用 ListView.builder 来动态生成
+      - ⚡ 性能更好，支持懒加载
+      - 适用内容是列表（例如：新闻列表、聊天记录）
+        
+   - SingleChildScrollView + Column + SafeArea
+
+5. **Card**
+      - 在 Flutter 里主要是用来让内容看起来像卡片一样清晰、有层次感，就像你在 App 里看到的资讯块、产品列表、留言框那种“白底 + 阴影 + 圆角”的视觉效果。
+      - Card 不带滚动效果（需要配合 ListView、Column 等使用）。
+      - 可以用 InkWell 包住它加点击效果。
+
+6.  
 
 ## Output:
 <table>
