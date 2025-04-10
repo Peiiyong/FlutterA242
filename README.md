@@ -2,6 +2,13 @@ Project File: model, view, controller, project structure
 
 Ask ChatGPT to design the layout: update the modern and the responsive design
 
+Shortcut Key:
+- create new flutter project: Ctrl + Shift + P
+- comment single line: Ctrl + K + C
+- cancel singlie line comment: Ctrl + K + U
+- comment multiple line: Shift + Alt + A
+- cancel multiple line comment: Shift + Alt + A
+
 # INFO 
 1. FlutLab : https://flutlab.io/workspace
    - 是一个在线 Flutter IDE，允许你直接在浏览器中开发、编译和运行 Flutter 应用，而无需在本地安装 Flutter SDK。
@@ -56,6 +63,9 @@ Ask ChatGPT to design the layout: update the modern and the responsive design
         - 用户不能返回旧页面。
         - 🧠 就像 “用新页面替换当前页面”。
 
+   - Navigator.pop(context);
+        - 关闭当前页面 并且返回就页面
+    
 4. **Scrollable** widget
    - SingleChildScrollView
       - 📦 适合：一个大内容块（多个 widget 组合在一起）
