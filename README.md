@@ -2,8 +2,6 @@ Project File: model, view, controller, project structure
 
 Ask ChatGPT to design the layout: update the modern and the responsive design
 
-**use textfield form can use validate (dont undertand)
-
 # INFO 
 1. FlutLab : https://flutlab.io/workspace
    - 是一个在线 Flutter IDE，允许你直接在浏览器中开发、编译和运行 Flutter 应用，而无需在本地安装 Flutter SDK。
@@ -85,7 +83,43 @@ Ask ChatGPT to design the layout: update the modern and the responsive design
          2. const double spacing = 10.0;
          3. const TextField(controller: textController) //会有error因为有controller
 
-7. 
+7. 🚀 为什么要用 TextFormField?
+   - TextFormField 支持 validator
+   - 可以跟 Form 搭配，集中做验证
+   - 让你的注册逻辑更干净、更规范
+   -  优点：
+        - 每个字段自动验证
+        - 报错信息直接显示在输入框下
+        - 不用你手动一个个 .text.isEmpty 去检查
+   - example:
+     
+           final _formKey = GlobalKey<FormState>();
+           Form(
+              key: _formKey,
+              child: Column(
+                children: [
+                  TextFormField(
+                    controller: emailController,
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Please enter your email';
+                      }
+                      return null; // 没错就return null
+                    },
+                  ),
+                  ...
+                  ElevatedButton(
+                    onPressed: () {
+                      if (_formKey.currentState!.validate()) {
+                        // 所有验证都通过
+                        registerUser();
+                      }
+                    },
+                    child: Text('Register'),
+                  ),
+                ],
+              ),
+            )
 
 ## Output:
 <table>
