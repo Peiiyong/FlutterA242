@@ -157,19 +157,19 @@ Shortcut Key:
   <tr>
     <th>T7</th>
     <th>T7</th>
-    <th>T</th>
+    <th>Self Study</th>
     <th>T</th>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/b2192752-859b-4089-944b-43347bda7c0f" width="180" height="350"></td>
-    <td><img src="https://github.com/user-attachments/assets/22846606-7829-495a-ac09-1b9a949a5a8d" width="180" height="350"></td>
-    <td><img src="" width="180" height="350"></td>
+    <td><img src="https://github.com/user-attachments/assets/4053b798-f4bc-4424-a96f-7d64f35948fb" width="180" height="350"></td>
+    <td><img src="https://github.com/user-attachments/assets/15d2ae6a-1e61-49b1-a13a-ed2bbb0f5290" width="180" height="350"></td>
     <td><img src="" width="180" height="350"></td>
   </tr>
   <tr>
     <th>4/10</th>
     <th>4/10</th>
-    <th>4/</th>
+    <th>4/10</th>
     <th>4/</th>
   </tr>
 </table>
