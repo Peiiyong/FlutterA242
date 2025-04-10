@@ -162,7 +162,7 @@ Shortcut Key:
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/b2192752-859b-4089-944b-43347bda7c0f" width="180" height="350"></td>
-    <td><img src="https://github.com/user-attachments/assets/200d1a24-6d87-4f3b-9886-920c720167db" width="180" height="350"></td>
+    <td><img src="https://github.com/user-attachments/assets/22846606-7829-495a-ac09-1b9a949a5a8d" width="180" height="350"></td>
     <td><img src="" width="180" height="350"></td>
     <td><img src="" width="180" height="350"></td>
   </tr>
