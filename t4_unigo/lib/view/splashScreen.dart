@@ -62,14 +62,14 @@ class _SplashScreenState extends State<SplashScreen> {
 
               CircularProgressIndicator.adaptive(backgroundColor: Colors.amber,),
           
-              // Text(
-              //   'UNIGO',
-              //   style: TextStyle(
-              //     fontWeight: FontWeight.bold,
-              //     fontSize: 64,
-              //     color: Colors.blue[800],
-              //   ),
-              // ),
+/*               Text(
+                'UNIGO',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 64,
+                  color: Colors.blue[800],
+                ),
+              ), */
             ],
           ),
         ),

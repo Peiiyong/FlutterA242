@@ -58,7 +58,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     ),
 
                     SizedBox(height: 15),
-
                     //pass
                     TextField(
                       controller: passwordController,
@@ -83,7 +82,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     ),
 
                     SizedBox(height: 15),
-
                     //confirm pass
                     TextField(
                       controller: confirmPasswordController,
@@ -110,7 +108,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     ),
 
                     SizedBox(height: 15),
-
                     //address
                     TextField(
                       controller: addressController,
@@ -134,7 +131,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     ),
 
                     SizedBox(height: 15),
-
                     //phone
                     TextField(
                       controller: phoneController,
@@ -155,9 +151,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     ),
 
                     SizedBox(height: 15),
-
                     //university
-                    DropdownButtonFormField<String>(
+ /*                    DropdownButtonFormField<String>(
                       decoration: InputDecoration(
                         prefixIcon: const Icon(Icons.school),
                         labelText: 'University',
@@ -182,7 +177,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           selectedUniversity = newValue!;
                         });
                       },
-                    ),
+                    ), */
 
                     TextField(
                       controller: universityController,
