@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/images/unigo.jpg', scale: 5,),
+              Image.asset('assets/images/unigo.png', scale: 5,),
               const CircularProgressIndicator(color: Colors.white,), // loading --> CircularProgressIndicator()
 
               SizedBox(height: 10,),
