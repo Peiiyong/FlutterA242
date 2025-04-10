@@ -15,6 +15,10 @@
             flutter pub add http
 
 4. JSON(text) / XML
+
+5. can download Adobe to handle pic
+   
+6. can install extension gemini
    
 # LEARNING PROGRESS
 1. Terminal
@@ -30,10 +34,6 @@
   
               cd unigo
               code .
-         
-6. can download Adobe to handle pic
-   
-7. can install extension gemini
 
 2. loading 
    - CircularProgressIndicator ：圆圈
