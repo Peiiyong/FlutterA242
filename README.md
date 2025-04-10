@@ -157,7 +157,7 @@ Ask ChatGPT to design the layout: update the modern and the responsive design
     <td><img src="" width="180" height="350"></td>
   </tr>
   <tr>
-    <th>4/107</th>
+    <th>4/10</th>
     <th>4/10</th>
     <th>4/</th>
     <th>4/</th>
