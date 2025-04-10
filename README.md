@@ -16,7 +16,8 @@
 
 4. JSON(text) / XML
    
-5.  Terminal
+# LEARNING PROGRESS
+1. Terminal
       -  create a new project using command prompt
         
               flutter create --org com.'package name' 'project name'
@@ -29,6 +30,18 @@
   
               cd unigo
               code .
+         
+6. can download Adobe to handle pic
+   
+7. can install extension gemini
+
+2. loading 
+   - CircularProgressIndicator ：圆圈
+   - RefreshProgressIndicator  ：圆形   
+   - LinearProgressIndicator   :横线
+   - CircularProgressIndicator.adaptive()
+  
+3. 
 
 
 ## Output:
