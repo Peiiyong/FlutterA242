@@ -15,6 +15,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   TextEditingController phoneController = TextEditingController();
   TextEditingController universityController = TextEditingController();
 
+  String? selectedUniversity;
+  final List<String> universityList = ['UTM', 'UKM', 'UM', 'UPM', 'USM'];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,6 +57,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           TextInputType.emailAddress, // if email --> @
                     ),
 
+                    SizedBox(height: 15),
+
                     //pass
                     TextField(
                       controller: passwordController,
@@ -77,10 +82,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       obscureText: true, // hide the password
                     ),
 
+                    SizedBox(height: 15),
+
                     //confirm pass
                     TextField(
                       controller: confirmPasswordController,
                       decoration: InputDecoration(
+                        prefixIcon: const Icon(Icons.lock), // add the icon
+                        suffixIcon: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.visibility),
+                        ), // add the icon
                         label: const Text(
                           'Confirm Password',
                         ), //before click the text field
@@ -97,25 +109,37 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       obscureText: true, // hide the password
                     ),
 
+                    SizedBox(height: 15),
+
                     //address
                     TextField(
                       controller: addressController,
-                      maxLines: 5, // 格子的行数
-                      maxLength: 18, // 格子的字数
+                      maxLines: 3, // 格子的行数
+                      maxLength: 40, // 格子的字数
                       decoration: InputDecoration(
+                        prefixIcon: const Icon(Icons.home), // add the icon
                         label: const Text(
                           'Address',
                         ), //before click the text field
                         hintText:
                             'Enter your address', //after click the text field
-                        prefixIcon: const Icon(Icons.home), // add the icon
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                          borderSide: const BorderSide(
+                            color: Colors.amber,
+                            width: 2.0,
+                          ),
+                        ),
                       ),
                     ),
+
+                    SizedBox(height: 15),
 
                     //phone
                     TextField(
                       controller: phoneController,
                       decoration: InputDecoration(
+                        prefixIcon: const Icon(Icons.phone), // add the icon
                         labelText: 'Phone Number', //before click the text field
                         hintText:
                             'Enter your phone number', //after click the text field
@@ -128,11 +152,42 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         ),
                       ),
                       keyboardType: TextInputType.phone,
-                    ), //phone
+                    ),
+
+                    SizedBox(height: 15),
+
                     //university
+                    DropdownButtonFormField<String>(
+                      decoration: InputDecoration(
+                        prefixIcon: const Icon(Icons.school),
+                        labelText: 'University',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                          borderSide: const BorderSide(
+                            color: Colors.amber,
+                            width: 2.0,
+                          ),
+                        ),
+                      ),
+                      value: selectedUniversity,
+                      items:
+                          universityList.map((String university) {
+                            return DropdownMenuItem<String>(
+                              value: university,
+                              child: Text(university),
+                            );
+                          }).toList(),
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          selectedUniversity = newValue!;
+                        });
+                      },
+                    ),
+
                     TextField(
                       controller: universityController,
                       decoration: InputDecoration(
+                        prefixIcon: const Icon(Icons.school),
                         labelText: 'University', //before click the text field
                         hintText:
                             'Enter your university', //after click the text field
@@ -174,7 +229,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     String confirmPassword = confirmPasswordController.text;
     String address = addressController.text;
     String phone = phoneController.text;
-    String university = universityController.text;
+    String university = selectedUniversity ?? '';
 
     if (email.isEmpty ||
         password.isEmpty ||
@@ -201,7 +256,5 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       );
       return;
     }
-
-    
   }
 }
