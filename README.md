@@ -79,11 +79,11 @@ Ask ChatGPT to design the layout: update the modern and the responsive design
       - 可以用 InkWell 包住它加点击效果。
 
 6.  **cosnt**
-   - 当 widget（或对象）在构建时不会变，就可以加 const！
-   - example:
-      1. const Icon(Icons.home),
-      2. const double spacing = 10.0;
-      3. const TextField(controller: textController) //会有error因为有controller
+      - 当 widget（或对象）在构建时不会变，就可以加 const！
+      - example:
+         1. const Icon(Icons.home),
+         2. const double spacing = 10.0;
+         3. const TextField(controller: textController) //会有error因为有controller
 
 7. 
 
